@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Lalezar&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+/* #e5e5f7 */
+body {
+  background-color: #333;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #333 20%,
+      #333 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #333 20%,
+        #333 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px,
+    linear-gradient(#444cf7 2px, transparent 2px) 0 -1px,
+    linear-gradient(90deg, #444cf7 2px, #333 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.637);
+  width: 80% auto;
+  padding: 15px 20px;
+}
+
+/* content_inputs */
+
+/* .card-head {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.637);
+} */
+
+.heading {
+  text-align: center;
+  color: #444cf7;
+}
+
+.card-body {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.card-body .form {
+  margin-top: 30px;
+}
+
+.card-body .form input {
+  border: 1px solid #aaa;
+  color: #000;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 20px;
+  /* font-weight: bold; */
+  text-align: center;
+}
+
+.card-body .form input::placeholder {
+  color: #222;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 5px 15px;
+  width: 54%;
+  background-color: #444cf7;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  background-color: #161dad;
+}
+
+/* content_outputs */
+
+.weight_value,
+.tall_value,
+#BMI {
+  color: #161dad;
+  font-size: 20px;
+}
+
+.body_shapes_container {
+  position: relative;
+  border: 1px solid #aaa;
+}
+
+.arrow_flesh {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 5px;
+  background-color: #191b30;
+}
+
+.bod_shapes_img {
+  border: 1px solid #aaa;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .bod_shapes_img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bod_shapes_img {
+    width: 100%;
+  }
+}
+
+.content_outputs {
+  display: none;
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حساب الوزن المثالي</title>
+    <!-- tailwind css CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- css file link -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="card">
+            <div class="content_inputs">
+                <div class="card-head">
+                    <h1 class="heading">معرفة الوزن المثالي وحساب كتلة الجسم</h1>
+                </div>
+                <div class="card-body">
+                    <div class="form">
+                        <form>
+                            <div class="weight_input">
+                                <input type="text" id="weight_input_value" placeholder="أدخل وزنك بالكيلو غرام">
+                            </div>
+                            <div class="tall_input">
+                                <input type="text" id="tall_input_value" placeholder="أدخل طولك بالسنتيمتر">
+                            </div>
+                            <button type="submit" id="btn_submit">
+                                أحسب
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="content_outputs">
+                <div class="your_inputs">
+                    <div class="card-head">
+                        <h1 class="heading">المدخلات</h1>
+                    </div>
+                    <div class="card-body">
+                        <span>الوزن : <span class="weight_value"></span> كغ</span>
+                        <span>الطول : <span class="tall_value"></span> سم </span>
+                    </div>
+                </div>
+                <div class="your_body_shape">
+                    <div class="card-head">
+                        <h1 class="heading">حالة جسمك</h1>
+                    </div>
+                    <div class="card-body">
+                        <h1 id="body_status"></h1>
+                        <span>مؤشر كتلة الجسم BMI هو : <span id="BMI"></span> </span>
+                    </div>
+                </div>
+                <div class="body_shapes_image">
+                    <div class="card-head">
+                        <h1 class="heading">شكل جسمك</h1>
+                    </div>
+                    <div class="card-body">
+                        <!-- <div class="arrow_flesh"></div> -->
+                        <img src="/bodyShapes.jpg" class="bod_shapes_img" alt="body_shapes_image">
+                        <!-- <div class="body_shapes_container">
+                           
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- js file link -->
+    <script src="script.js"></script>
+  </body>
+</html>
