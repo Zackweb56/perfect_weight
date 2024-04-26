@@ -70,8 +70,9 @@ body {
 }
 
 .card-body .form input {
+  outline: none;
   border: 1px solid #aaa;
-  color: #000;
+  color: #333;
   padding: 10px;
   margin: 10px 0;
   font-size: 20px;
@@ -79,8 +80,15 @@ body {
   text-align: center;
 }
 
+.card-body .form input:focus {
+  border: 3px dashed #444cf7;
+  color: #161dad;
+  font-size: 23px;
+  /* outline: ; */
+}
+
 .card-body .form input::placeholder {
-  color: #222;
+  color: #444;
 }
 
 button {
@@ -143,4 +151,3 @@ button:hover {
 .content_outputs {
   display: none;
 }
-
